@@ -42,18 +42,22 @@
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
 
-// Console.WriteLine("Введите координаты точки X1:");
+// Console.WriteLine("Введите координаты точки А по X:");
 // int x1 = int.Parse(Console.ReadLine());
-// Console.WriteLine("Введите координаты точки Y1:");
+// Console.WriteLine("Введите координаты точки А по Y:");
 // int y1 = int.Parse(Console.ReadLine());
-// Console.WriteLine("Введите координаты точки X2:");
+// Console.WriteLine("Введите координаты точки А по Z:");
+// int z1 = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите координаты точки В по X:");
 // int x2 = int.Parse(Console.ReadLine());
-// Console.WriteLine("Введите координаты точки y2:");
+// Console.WriteLine("Введите координаты точки В по Y:");
 // int y2 = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите координаты точки В по Z:");
+// int z2 = int.Parse(Console.ReadLine());
 
-// double resalt =  Math.Math.Sqrt(Math.Pow((x1-x2),2) + Math.Pow((y1-y2),2));
+// double resalt =  Math.Sqrt(Math.Pow((x1-x2),2) + Math.Pow((y1-y2),2)+ Math.Pow((z1+z2),2));
 
-// Console.WriteLine($"рачтоние между точками {Math.Round(resalt,2)}");
+//  Console.WriteLine($"рачтоние между точками {Math.Round(resalt,2)}");
 
 
 // Задача 23
@@ -62,6 +66,20 @@
 
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
+
+ Console.WriteLine("Введите N:");
+ int num = int.Parse(Console.ReadLine());
+int i = 1;
+double resalt = 0;
+ Console.Write( "таблица кубов  :");
+ while ( i < num)
+ {
+    resalt = Math.Pow(i,2)*i;
+       
+        Console.Write( $"{resalt} ");
+        i++;
+ }
+
 
 // Необязательная к выполнению задача (не будет влиять на итоговую оценку ДЗ)
 // Дополнительная задача (задача со звёздочкой): Напишите программу, которая на вход принимает радиус круга и находит его площадь округленную до целого числа, необходимо вывести максимальную цифру в полученном округлённом значении площади круга.
